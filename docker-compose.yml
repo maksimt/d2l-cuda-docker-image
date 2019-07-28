@@ -1,0 +1,10 @@
+version: '3'
+services:
+        d2l-cuda:
+                build: .
+                ports:
+                        - "8888:8888"
+                        - "8082:8082"
+                volumes:
+                        - ./:/home/d2lstudent/workspace
+                shm_size: 4G
